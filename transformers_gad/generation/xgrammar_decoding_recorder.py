@@ -35,28 +35,28 @@ class XGrammarDecodingRecorder(LogitsProcessor):
         # Step counter
         self.current_step = 0
 
-    def record_decoding_tree(self, scores, acceptance, selected_token=None):
-        """
-        Record the decoding tree by storing accepted tokens in the trie
+    # def record_decoding_tree(self, scores, acceptance, selected_token=None):
+    #     """
+    #     Record the decoding tree by storing accepted tokens in the trie
         
-        Args:
-            scores (torch.FloatTensor): The logits from the language model
-            acceptance (torch.Tensor): Boolean tensor indicating accepted tokens
-            selected_token (int, optional): The token ID that was actually selected in this step
-        """
-        # # Find the current parent node in the trie
-        # current_parent = self.oracle_trie.search_last_parent(self.generated_tokens)
+    #     Args:
+    #         scores (torch.FloatTensor): The logits from the language model
+    #         acceptance (torch.Tensor): Boolean tensor indicating accepted tokens
+    #         selected_token (int, optional): The token ID that was actually selected in this step
+    #     """
+    #     # # Find the current parent node in the trie
+    #     # current_parent = self.oracle_trie.search_last_parent(self.generated_tokens)
         
-        # # If no parent node is found, use the root node
-        # if current_parent is None:
-        #     current_parent = self.oracle_trie.root
-        #     print(f"Warning: No parent node found in trie, using root node instead.")
+    #     # # If no parent node is found, use the root node
+    #     # if current_parent is None:
+    #     #     current_parent = self.oracle_trie.root
+    #     #     print(f"Warning: No parent node found in trie, using root node instead.")
         
-        # # Record accepted tokens in the trie
-        # current_parent.insert_accepted_tokens(scores, acceptance)
+    #     # # Record accepted tokens in the trie
+    #     # current_parent.insert_accepted_tokens(scores, acceptance)
 
-        if self.save_log:
-            self.store_decoding_history(acceptance, scores, selected_token)
+    #     if self.save_log:
+    #         self.store_decoding_history(acceptance, scores, selected_token)
 
     def process_scores(self, input_ids, scores, next_tokens=None):
         """
@@ -72,26 +72,30 @@ class XGrammarDecodingRecorder(LogitsProcessor):
         """
         # Store generated tokens for tree recording
         self.generated_tokens = input_ids
+        
+        # Print debugging information for original top token before constraint
+        # original_top_token_id = scores[0].argmax().item()
+        # original_top_token = self.tokenizer.convert_ids_to_tokens(original_top_token_id)
+        # original_top_prob = F.softmax(scores[0], dim=-1)[original_top_token_id].item()
+        # print("\n===[DEBUG] Original top token before constraint ===")
+        # print(f"Token ID: {original_top_token_id}")
+        # print(f"Token: {original_top_token}")
+        # print(f"Probability: {original_top_prob}")
 
         # Apply xgrammar constraints
+        score_original = scores.clone()
         masked_scores = self.xgr_processor(input_ids, scores)
+        # print("=== Masked scores equal to original?", torch.equal(masked_scores, score_original))
         
         # Get acceptance mask from xgrammar processor
         acceptance = (masked_scores != float('-inf'))
-        
-        # Print debugging information
-        # Allowed token IDs for the current step
-        allowed_token_ids = torch.nonzero(acceptance[0]).squeeze(-1).tolist()
-        print("\n===[DEBUG] Allowed token ids this step ===")
-        print(allowed_token_ids)
-        print("===[DEBUG] Allowed token strings ===")
-        print([self.tokenizer.decode([tid]) for tid in allowed_token_ids])
         
         # Get the actual selected token from next_tokens if provided
         selected_token = next_tokens[0].item() if next_tokens is not None else None
         
         # Record the decoding tree with masked scores
-        self.record_decoding_tree(scores, acceptance, selected_token)
+        self.store_decoding_history(acceptance, score_original, selected_token)
+        # self.record_decoding_tree(score_original, acceptance, selected_token)
         
         return masked_scores
 
@@ -133,16 +137,16 @@ class XGrammarDecodingRecorder(LogitsProcessor):
         """Reset the oracle trie"""
         self.oracle_trie = Trie()
 
-    def store_decoding_history(self, acceptance, scores, selected_token=None):
+    def store_decoding_history(self, acceptance, scores_original, selected_token=None):
         """
         Store information about accepted tokens in the current decoding step
         
         Args:
             acceptance (torch.Tensor): Boolean tensor indicating accepted tokens
-            scores (torch.Tensor): The logits from the language model
+            scores_original (torch.Tensor): The logits from the language model
             selected_token (int, optional): The token ID that was selected in the previous step
         """
-        likelihoods = F.softmax(scores, dim=-1)
+        likelihoods = F.softmax(scores_original, dim=-1)
 
         batch_accepted_info = []
 
@@ -169,7 +173,7 @@ class XGrammarDecodingRecorder(LogitsProcessor):
             }
             
             # Get top token information for current step
-            top_token_id = scores[batch_index].argmax().item()
+            top_token_id = scores_original[batch_index].argmax().item()
             top_token_prob = likelihoods[batch_index, top_token_id].item()
             top_token = self.tokenizer.convert_ids_to_tokens(top_token_id)
             is_intervened = not acceptance[batch_index, top_token_id].item()
@@ -214,7 +218,7 @@ class XGrammarDecodingRecorder(LogitsProcessor):
 
             for idx in accepted_indices:
                 token_id = idx.item()
-                raw_score = scores[batch_index, idx].item()
+                raw_score = scores_original[batch_index, idx].item()
                 likelihood = likelihoods[batch_index, idx].item()
                 # Convert token ID to string representation
                 token = self.tokenizer.convert_ids_to_tokens(token_id)
@@ -249,7 +253,7 @@ class XGrammarDecodingRecorder(LogitsProcessor):
         self.history.append(batch_accepted_info)
         
         # Store current scores and likelihoods for next step
-        self.prev_scores = scores
+        self.prev_scores = scores_original
         self.prev_likelihoods = likelihoods
         
         # Increment step counter

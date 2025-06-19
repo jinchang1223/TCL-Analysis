@@ -1,0 +1,2959 @@
+{
+    "schema": "calculate_area_143516bf.json",
+    "output": [
+        "{\"shape\": \"rectangle\", \"width\": 10.0}"
+    ],
+    "decoding_history": [
+        [
+            {
+                "metrics": {
+                    "step": 0,
+                    "n_accepted": 5,
+                    "acceptance_ratio": 3.898453093812375e-05,
+                    "prob_mass": {
+                        "total_prob_before_filter": 1.0000423192977905,
+                        "total_prob_after_filter": 1.2382185559545178e-05,
+                        "max_prob_before_filter": 0.31819823384284973,
+                        "min_prob_before_filter": 1.5727009538418768e-12,
+                        "max_prob_after_filter": 1.0296586879121605e-05,
+                        "min_prob_after_filter": 1.2876061816768924e-07
+                    },
+                    "top_token_prob": 0.31819823384284973,
+                    "top_token": "}\u010a\u010a",
+                    "actual_token_prob": 1.0296586879121605e-05,
+                    "actual_token": "{\"",
+                    "is_intervened": true
+                },
+                "top_20_before_constraint": [
+                    {
+                        "token_id": 633,
+                        "token": "}\u010a\u010a",
+                        "raw_likelihood": 0.31819823384284973
+                    },
+                    {
+                        "token_id": 534,
+                        "token": "}\u010a",
+                        "raw_likelihood": 0.1571684181690216
+                    },
+                    {
+                        "token_id": 4077,
+                        "token": "`\u010a",
+                        "raw_likelihood": 0.08378974348306656
+                    },
+                    {
+                        "token_id": 3500,
+                        "token": "}}",
+                        "raw_likelihood": 0.05552845075726509
+                    },
+                    {
+                        "token_id": 19884,
+                        "token": "`\u010a\u010a",
+                        "raw_likelihood": 0.05201958864927292
+                    },
+                    {
+                        "token_id": 2186,
+                        "token": "},",
+                        "raw_likelihood": 0.027264229953289032
+                    },
+                    {
+                        "token_id": 16823,
+                        "token": "'}\u010a",
+                        "raw_likelihood": 0.025025052949786186
+                    },
+                    {
+                        "token_id": 92,
+                        "token": "}",
+                        "raw_likelihood": 0.017745690420269966
+                    },
+                    {
+                        "token_id": 57277,
+                        "token": "**\u010a\u010a",
+                        "raw_likelihood": 0.017619922757148743
+                    },
+                    {
+                        "token_id": 68725,
+                        "token": "'}\u010a\u010a",
+                        "raw_likelihood": 0.016102304682135582
+                    },
+                    {
+                        "token_id": 9388,
+                        "token": "\"}",
+                        "raw_likelihood": 0.01176671776920557
+                    },
+                    {
+                        "token_id": 4815,
+                        "token": "\u0120\u010a\u010a",
+                        "raw_likelihood": 0.010961178690195084
+                    },
+                    {
+                        "token_id": 8439,
+                        "token": "'}",
+                        "raw_likelihood": 0.009577885270118713
+                    },
+                    {
+                        "token_id": 334,
+                        "token": "**",
+                        "raw_likelihood": 0.009174719452857971
+                    },
+                    {
+                        "token_id": 3961,
+                        "token": "'\u010a\u010a",
+                        "raw_likelihood": 0.007952341809868813
+                    },
+                    {
+                        "token_id": 1270,
+                        "token": "'\u010a",
+                        "raw_likelihood": 0.00715833343565464
+                    },
+                    {
+                        "token_id": 32075,
+                        "token": "\"}}",
+                        "raw_likelihood": 0.00557597354054451
+                    },
+                    {
+                        "token_id": 1035,
+                        "token": "**\u010a",
+                        "raw_likelihood": 0.005434395279735327
+                    },
+                    {
+                        "token_id": 76642,
+                        "token": "}}}",
+                        "raw_likelihood": 0.005133615341037512
+                    },
+                    {
+                        "token_id": 3818,
+                        "token": "}\u010a\u010a\u010a",
+                        "raw_likelihood": 0.004720093682408333
+                    }
+                ],
+                "top_20_after_constraint": [
+                    {
+                        "token_id": 5018,
+                        "token": "{\"",
+                        "raw_likelihood": 1.0296586879121605e-05
+                    },
+                    {
+                        "token_id": 4352,
+                        "token": "{\u010a\u010a",
+                        "raw_likelihood": 7.368951742137142e-07
+                    },
+                    {
+                        "token_id": 90,
+                        "token": "{",
+                        "raw_likelihood": 7.163467898863018e-07
+                    },
+                    {
+                        "token_id": 517,
+                        "token": "{\u010a",
+                        "raw_likelihood": 5.03596368162107e-07
+                    },
+                    {
+                        "token_id": 54732,
+                        "token": "{\u010a\u010a\u010a",
+                        "raw_likelihood": 1.2876061816768924e-07
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "metrics": {
+                    "step": 1,
+                    "n_accepted": 21,
+                    "acceptance_ratio": 0.00016373502994011975,
+                    "prob_mass": {
+                        "total_prob_before_filter": 1.000004768371582,
+                        "total_prob_after_filter": 0.12941959500312805,
+                        "max_prob_before_filter": 0.21241559088230133,
+                        "min_prob_before_filter": 1.4998285599587824e-11,
+                        "max_prob_after_filter": 0.06743170320987701,
+                        "min_prob_after_filter": 7.74536434988704e-09
+                    },
+                    "top_token_prob": 0.21241559088230133,
+                    "top_token": "type",
+                    "actual_token_prob": 0.06743170320987701,
+                    "actual_token": "shape",
+                    "is_intervened": true
+                },
+                "top_20_before_constraint": [
+                    {
+                        "token_id": 1337,
+                        "token": "type",
+                        "raw_likelihood": 0.21241559088230133
+                    },
+                    {
+                        "token_id": 13495,
+                        "token": "properties",
+                        "raw_likelihood": 0.16309581696987152
+                    },
+                    {
+                        "token_id": 12510,
+                        "token": "shape",
+                        "raw_likelihood": 0.06743170320987701
+                    },
+                    {
+                        "token_id": 3,
+                        "token": "$",
+                        "raw_likelihood": 0.06404820084571838
+                    },
+                    {
+                        "token_id": 3231,
+                        "token": "base",
+                        "raw_likelihood": 0.05866478756070137
+                    },
+                    {
+                        "token_id": 307,
+                        "token": "id",
+                        "raw_likelihood": 0.04958738386631012
+                    },
+                    {
+                        "token_id": 798,
+                        "token": "key",
+                        "raw_likelihood": 0.031021108850836754
+                    },
+                    {
+                        "token_id": 17801,
+                        "token": "schema",
+                        "raw_likelihood": 0.020406009629368782
+                    },
+                    {
+                        "token_id": 970,
+                        "token": "value",
+                        "raw_likelihood": 0.012115669436752796
+                    },
+                    {
+                        "token_id": 4789,
+                        "token": "description",
+                        "raw_likelihood": 0.010719627141952515
+                    },
+                    {
+                        "token_id": 3784,
+                        "token": "property",
+                        "raw_likelihood": 0.00955063197761774
+                    },
+                    {
+                        "token_id": 6413,
+                        "token": "required",
+                        "raw_likelihood": 0.009105589240789413
+                    },
+                    {
+                        "token_id": 5260,
+                        "token": "components",
+                        "raw_likelihood": 0.008985741063952446
+                    },
+                    {
+                        "token_id": 62,
+                        "token": "_",
+                        "raw_likelihood": 0.007276195101439953
+                    },
+                    {
+                        "token_id": 2150,
+                        "token": "title",
+                        "raw_likelihood": 0.006153521593660116
+                    },
+                    {
+                        "token_id": 3699,
+                        "token": "items",
+                        "raw_likelihood": 0.005713215097784996
+                    },
+                    {
+                        "token_id": 9184,
+                        "token": "fields",
+                        "raw_likelihood": 0.005265148356556892
+                    },
+                    {
+                        "token_id": 2398,
+                        "token": "path",
+                        "raw_likelihood": 0.004811179358512163
+                    },
+                    {
+                        "token_id": 93159,
+                        "token": "shapes",
+                        "raw_likelihood": 0.0046836212277412415
+                    },
+                    {
+                        "token_id": 2309,
+                        "token": "default",
+                        "raw_likelihood": 0.0038825178053230047
+                    }
+                ],
+                "top_20_after_constraint": [
+                    {
+                        "token_id": 12510,
+                        "token": "shape",
+                        "raw_likelihood": 0.06743170320987701
+                    },
+                    {
+                        "token_id": 3231,
+                        "token": "base",
+                        "raw_likelihood": 0.05866478756070137
+                    },
+                    {
+                        "token_id": 4222,
+                        "token": "length",
+                        "raw_likelihood": 0.001607814454473555
+                    },
+                    {
+                        "token_id": 2627,
+                        "token": "height",
+                        "raw_likelihood": 0.0007153642363846302
+                    },
+                    {
+                        "token_id": 27813,
+                        "token": "radius",
+                        "raw_likelihood": 0.0005783290253020823
+                    },
+                    {
+                        "token_id": 82,
+                        "token": "s",
+                        "raw_likelihood": 0.0001727440976537764
+                    },
+                    {
+                        "token_id": 18275,
+                        "token": "bas",
+                        "raw_likelihood": 5.6943779782159254e-05
+                    },
+                    {
+                        "token_id": 81,
+                        "token": "r",
+                        "raw_likelihood": 5.154833343112841e-05
+                    },
+                    {
+                        "token_id": 75,
+                        "token": "l",
+                        "raw_likelihood": 3.7584097299259156e-05
+                    },
+                    {
+                        "token_id": 70312,
+                        "token": "radi",
+                        "raw_likelihood": 2.4080030925688334e-05
+                    },
+                    {
+                        "token_id": 2963,
+                        "token": "len",
+                        "raw_likelihood": 2.2299078409560025e-05
+                    },
+                    {
+                        "token_id": 65,
+                        "token": "b",
+                        "raw_likelihood": 2.2233738491195254e-05
+                    },
+                    {
+                        "token_id": 13584,
+                        "token": "rad",
+                        "raw_likelihood": 1.399777738697594e-05
+                    },
+                    {
+                        "token_id": 939,
+                        "token": "sh",
+                        "raw_likelihood": 8.377879566978663e-06
+                    },
+                    {
+                        "token_id": 15605,
+                        "token": "sha",
+                        "raw_likelihood": 5.333695753506618e-06
+                    },
+                    {
+                        "token_id": 273,
+                        "token": "le",
+                        "raw_likelihood": 3.40822703037702e-06
+                    },
+                    {
+                        "token_id": 71,
+                        "token": "h",
+                        "raw_likelihood": 2.5198969524353743e-06
+                    },
+                    {
+                        "token_id": 969,
+                        "token": "ra",
+                        "raw_likelihood": 2.662867757408094e-07
+                    },
+                    {
+                        "token_id": 4749,
+                        "token": "ba",
+                        "raw_likelihood": 1.5974168832144642e-07
+                    },
+                    {
+                        "token_id": 383,
+                        "token": "he",
+                        "raw_likelihood": 8.946692275912937e-08
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "metrics": {
+                    "step": 2,
+                    "n_accepted": 9,
+                    "acceptance_ratio": 7.017215568862275e-05,
+                    "prob_mass": {
+                        "total_prob_before_filter": 1.0000578165054321,
+                        "total_prob_after_filter": 0.9832826256752014,
+                        "max_prob_before_filter": 0.9729560613632202,
+                        "min_prob_before_filter": 1.7377817392548456e-13,
+                        "max_prob_after_filter": 0.9729560613632202,
+                        "min_prob_after_filter": 5.294699576552375e-07
+                    },
+                    "top_token_prob": 0.9729560613632202,
+                    "top_token": "\":",
+                    "actual_token_prob": 0.9729560613632202,
+                    "actual_token": "\":",
+                    "is_intervened": false
+                },
+                "top_20_before_constraint": [
+                    {
+                        "token_id": 794,
+                        "token": "\":",
+                        "raw_likelihood": 0.9729560613632202
+                    },
+                    {
+                        "token_id": 3332,
+                        "token": "\":\"",
+                        "raw_likelihood": 0.009476904757320881
+                    },
+                    {
+                        "token_id": 23118,
+                        "token": "\":{\"",
+                        "raw_likelihood": 0.0009739544475451112
+                    },
+                    {
+                        "token_id": 678,
+                        "token": "Name",
+                        "raw_likelihood": 0.0009072567336261272
+                    },
+                    {
+                        "token_id": 1,
+                        "token": "\"",
+                        "raw_likelihood": 0.0008184524485841393
+                    },
+                    {
+                        "token_id": 1292,
+                        "token": "_name",
+                        "raw_likelihood": 0.0005909946630708873
+                    },
+                    {
+                        "token_id": 941,
+                        "token": "Type",
+                        "raw_likelihood": 0.000521868874784559
+                    },
+                    {
+                        "token_id": 498,
+                        "token": "\",",
+                        "raw_likelihood": 0.00048608286306262016
+                    },
+                    {
+                        "token_id": 1857,
+                        "token": "_type",
+                        "raw_likelihood": 0.0003987213713116944
+                    },
+                    {
+                        "token_id": 851,
+                        "token": "_id",
+                        "raw_likelihood": 0.0003821043355856091
+                    },
+                    {
+                        "token_id": 10999,
+                        "token": "Enum",
+                        "raw_likelihood": 0.0003805304295383394
+                    },
+                    {
+                        "token_id": 12581,
+                        "token": "Shape",
+                        "raw_likelihood": 0.00036469759652391076
+                    },
+                    {
+                        "token_id": 4266,
+                        "token": "Types",
+                        "raw_likelihood": 0.00023605531896464527
+                    },
+                    {
+                        "token_id": 67682,
+                        "token": "\":[{\"",
+                        "raw_likelihood": 0.00019204069394618273
+                    },
+                    {
+                        "token_id": 6211,
+                        "token": "\u0120shape",
+                        "raw_likelihood": 0.00019016825535800308
+                    },
+                    {
+                        "token_id": 3343,
+                        "token": "\".",
+                        "raw_likelihood": 0.00016851042164489627
+                    },
+                    {
+                        "token_id": 32075,
+                        "token": "\"}}",
+                        "raw_likelihood": 0.00016752131341490895
+                    },
+                    {
+                        "token_id": 1150,
+                        "token": "Value",
+                        "raw_likelihood": 0.00016322500596288592
+                    },
+                    {
+                        "token_id": 8062,
+                        "token": "Properties",
+                        "raw_likelihood": 0.00014467252185568213
+                    },
+                    {
+                        "token_id": 769,
+                        "token": "Id",
+                        "raw_likelihood": 0.0001428183022653684
+                    }
+                ],
+                "top_20_after_constraint": [
+                    {
+                        "token_id": 794,
+                        "token": "\":",
+                        "raw_likelihood": 0.9729560613632202
+                    },
+                    {
+                        "token_id": 3332,
+                        "token": "\":\"",
+                        "raw_likelihood": 0.009476904757320881
+                    },
+                    {
+                        "token_id": 1,
+                        "token": "\"",
+                        "raw_likelihood": 0.0008184524485841393
+                    },
+                    {
+                        "token_id": 702,
+                        "token": "\"\u010a",
+                        "raw_likelihood": 1.1279356840532273e-05
+                    },
+                    {
+                        "token_id": 4764,
+                        "token": "\":\u010a",
+                        "raw_likelihood": 8.009238626982551e-06
+                    },
+                    {
+                        "token_id": 52518,
+                        "token": "\":\u010a\u010a",
+                        "raw_likelihood": 5.345132194634061e-06
+                    },
+                    {
+                        "token_id": 1875,
+                        "token": "\"\u010a\u010a",
+                        "raw_likelihood": 4.873541911365464e-06
+                    },
+                    {
+                        "token_id": 15993,
+                        "token": "\"\u010a\u010a\u010a",
+                        "raw_likelihood": 1.2156428965681698e-06
+                    },
+                    {
+                        "token_id": 44708,
+                        "token": "\"\u010a\u010a\u010a\u010a",
+                        "raw_likelihood": 5.294699576552375e-07
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "metrics": {
+                    "step": 3,
+                    "n_accepted": 371,
+                    "acceptance_ratio": 0.0028926521956087825,
+                    "prob_mass": {
+                        "total_prob_before_filter": 1.0000221729278564,
+                        "total_prob_after_filter": 0.9343249797821045,
+                        "max_prob_before_filter": 0.9331239461898804,
+                        "min_prob_before_filter": 1.5547314141401564e-13,
+                        "max_prob_after_filter": 0.9331239461898804,
+                        "min_prob_after_filter": 1.2250977142469477e-11
+                    },
+                    "top_token_prob": 0.9331239461898804,
+                    "top_token": "\u0120\"",
+                    "actual_token_prob": 0.9331239461898804,
+                    "actual_token": "\u0120\"",
+                    "is_intervened": false
+                },
+                "top_20_before_constraint": [
+                    {
+                        "token_id": 330,
+                        "token": "\u0120\"",
+                        "raw_likelihood": 0.9331239461898804
+                    },
+                    {
+                        "token_id": 5324,
+                        "token": "\u0120{\"",
+                        "raw_likelihood": 0.0448710061609745
+                    },
+                    {
+                        "token_id": 4482,
+                        "token": "\u0120[\"",
+                        "raw_likelihood": 0.011508144438266754
+                    },
+                    {
+                        "token_id": 62853,
+                        "token": "\u0120[{\"",
+                        "raw_likelihood": 0.0014335720334202051
+                    },
+                    {
+                        "token_id": 220,
+                        "token": "\u0120",
+                        "raw_likelihood": 0.0011933338828384876
+                    },
+                    {
+                        "token_id": 10768,
+                        "token": "\u0120\"[",
+                        "raw_likelihood": 0.0011068134335801005
+                    },
+                    {
+                        "token_id": 5312,
+                        "token": "\u0120\"$",
+                        "raw_likelihood": 0.0007597903604619205
+                    },
+                    {
+                        "token_id": 314,
+                        "token": "\u0120{",
+                        "raw_likelihood": 0.0007362287142314017
+                    },
+                    {
+                        "token_id": 341,
+                        "token": "\u0120{\u010a",
+                        "raw_likelihood": 0.0003502648323774338
+                    },
+                    {
+                        "token_id": 854,
+                        "token": "\u0120null",
+                        "raw_likelihood": 0.0003349321195855737
+                    },
+                    {
+                        "token_id": 7492,
+                        "token": "\u0120\"\",",
+                        "raw_likelihood": 0.0003284273261670023
+                    },
+                    {
+                        "token_id": 9177,
+                        "token": "\u0120\"_",
+                        "raw_likelihood": 0.00030891018104739487
+                    },
+                    {
+                        "token_id": 510,
+                        "token": "\u0120[",
+                        "raw_likelihood": 0.00025717070093378425
+                    },
+                    {
+                        "token_id": 14190,
+                        "token": "\u0120\"{",
+                        "raw_likelihood": 0.00022710218036081642
+                    },
+                    {
+                        "token_id": 55834,
+                        "token": "\u0120\"{\\\"",
+                        "raw_likelihood": 0.00016975606558844447
+                    },
+                    {
+                        "token_id": 5993,
+                        "token": "\u0120\"#",
+                        "raw_likelihood": 0.0001629156176932156
+                    },
+                    {
+                        "token_id": 4145,
+                        "token": "\u0120\"<",
+                        "raw_likelihood": 0.00015379814431071281
+                    },
+                    {
+                        "token_id": 2990,
+                        "token": "\u0120\"\\",
+                        "raw_likelihood": 0.00012604148651007563
+                    },
+                    {
+                        "token_id": 3605,
+                        "token": "\u0120\"/",
+                        "raw_likelihood": 0.00012022902228636667
+                    },
+                    {
+                        "token_id": 11094,
+                        "token": "\u0120\"${",
+                        "raw_likelihood": 0.00011249751696595922
+                    }
+                ],
+                "top_20_after_constraint": [
+                    {
+                        "token_id": 330,
+                        "token": "\u0120\"",
+                        "raw_likelihood": 0.9331239461898804
+                    },
+                    {
+                        "token_id": 220,
+                        "token": "\u0120",
+                        "raw_likelihood": 0.0011933338828384876
+                    },
+                    {
+                        "token_id": 720,
+                        "token": "\u0120\u010a",
+                        "raw_likelihood": 4.6973755161161534e-06
+                    },
+                    {
+                        "token_id": 7163,
+                        "token": "\u0120\u0109",
+                        "raw_likelihood": 3.046560834718548e-07
+                    },
+                    {
+                        "token_id": 1,
+                        "token": "\"",
+                        "raw_likelihood": 2.870491186968138e-07
+                    },
+                    {
+                        "token_id": 4815,
+                        "token": "\u0120\u010a\u010a",
+                        "raw_likelihood": 2.031245855960151e-07
+                    },
+                    {
+                        "token_id": 197,
+                        "token": "\u0109",
+                        "raw_likelihood": 1.705426484477357e-07
+                    },
+                    {
+                        "token_id": 256,
+                        "token": "\u0120\u0120",
+                        "raw_likelihood": 1.5711557921349595e-07
+                    },
+                    {
+                        "token_id": 2355,
+                        "token": "\u0120\u0120\u010a",
+                        "raw_likelihood": 1.339790998144963e-07
+                    },
+                    {
+                        "token_id": 51087,
+                        "token": "\u0120\u010a\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u010a",
+                        "raw_likelihood": 8.989802324776974e-08
+                    },
+                    {
+                        "token_id": 198,
+                        "token": "\u010a",
+                        "raw_likelihood": 8.813402274654436e-08
+                    },
+                    {
+                        "token_id": 262,
+                        "token": "\u0120\u0120\u0120",
+                        "raw_likelihood": 6.911744065973835e-08
+                    },
+                    {
+                        "token_id": 257,
+                        "token": "\u0120\u0120\u0120\u0120",
+                        "raw_likelihood": 6.362188997854901e-08
+                    },
+                    {
+                        "token_id": 1432,
+                        "token": "\u010a\u010a\u010a",
+                        "raw_likelihood": 6.249554473924945e-08
+                    },
+                    {
+                        "token_id": 33006,
+                        "token": "\u0120\u010a\u0120\u010a",
+                        "raw_likelihood": 5.7255792995647425e-08
+                    },
+                    {
+                        "token_id": 415,
+                        "token": "\u0120\u0120\u0120\u0120\u0120",
+                        "raw_likelihood": 5.6129202619104035e-08
+                    },
+                    {
+                        "token_id": 3762,
+                        "token": "\u0109\u0120",
+                        "raw_likelihood": 4.594809865920979e-08
+                    },
+                    {
+                        "token_id": 5244,
+                        "token": "\u010a\u010a\u010a\u010a\u010a\u010a",
+                        "raw_likelihood": 4.561940158964717e-08
+                    },
+                    {
+                        "token_id": 1602,
+                        "token": "\u0109\u010a",
+                        "raw_likelihood": 4.432265399145763e-08
+                    },
+                    {
+                        "token_id": 37945,
+                        "token": "\u0120\u010a\u0120\u0120\u0120\u0120\u010a",
+                        "raw_likelihood": 4.273539389032521e-08
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "metrics": {
+                    "step": 4,
+                    "n_accepted": 14,
+                    "acceptance_ratio": 0.0001091566866267465,
+                    "prob_mass": {
+                        "total_prob_before_filter": 1.0000286102294922,
+                        "total_prob_after_filter": 0.9652912020683289,
+                        "max_prob_before_filter": 0.5233118534088135,
+                        "min_prob_before_filter": 2.344989220165461e-12,
+                        "max_prob_after_filter": 0.5233118534088135,
+                        "min_prob_after_filter": 5.107877427690255e-07
+                    },
+                    "top_token_prob": 0.5233118534088135,
+                    "top_token": "rectangle",
+                    "actual_token_prob": 0.5233118534088135,
+                    "actual_token": "rectangle",
+                    "is_intervened": false
+                },
+                "top_20_before_constraint": [
+                    {
+                        "token_id": 56416,
+                        "token": "rectangle",
+                        "raw_likelihood": 0.5233118534088135
+                    },
+                    {
+                        "token_id": 26942,
+                        "token": "circle",
+                        "raw_likelihood": 0.2356700748205185
+                    },
+                    {
+                        "token_id": 56214,
+                        "token": "triangle",
+                        "raw_likelihood": 0.20422755181789398
+                    },
+                    {
+                        "token_id": 21775,
+                        "token": "Rectangle",
+                        "raw_likelihood": 0.004147715866565704
+                    },
+                    {
+                        "token_id": 38576,
+                        "token": "square",
+                        "raw_likelihood": 0.0034571154974400997
+                    },
+                    {
+                        "token_id": 12510,
+                        "token": "shape",
+                        "raw_likelihood": 0.0033462741412222385
+                    },
+                    {
+                        "token_id": 53042,
+                        "token": "Triangle",
+                        "raw_likelihood": 0.0013994035543873906
+                    },
+                    {
+                        "token_id": 46511,
+                        "token": "cube",
+                        "raw_likelihood": 0.0011098989052698016
+                    },
+                    {
+                        "token_id": 26264,
+                        "token": "Circle",
+                        "raw_likelihood": 0.0010025284718722105
+                    },
+                    {
+                        "token_id": 2921,
+                        "token": "rect",
+                        "raw_likelihood": 0.0006997748860158026
+                    },
+                    {
+                        "token_id": 62947,
+                        "token": "_rectangle",
+                        "raw_likelihood": 0.000694488117005676
+                    },
+                    {
+                        "token_id": 1735,
+                        "token": "object",
+                        "raw_likelihood": 0.0006594611331820488
+                    },
+                    {
+                        "token_id": 23596,
+                        "token": "\u0120rectangle",
+                        "raw_likelihood": 0.0005309951957315207
+                    },
+                    {
+                        "token_id": 928,
+                        "token": "string",
+                        "raw_likelihood": 0.0005200523301027715
+                    },
+                    {
+                        "token_id": 4174,
+                        "token": "number",
+                        "raw_likelihood": 0.0004787931975442916
+                    },
+                    {
+                        "token_id": 44398,
+                        "token": "circ",
+                        "raw_likelihood": 0.0004702154255937785
+                    },
+                    {
+                        "token_id": 69104,
+                        "token": "ellipse",
+                        "raw_likelihood": 0.00044882905785925686
+                    },
+                    {
+                        "token_id": 23254,
+                        "token": "tri",
+                        "raw_likelihood": 0.0004340772284194827
+                    },
+                    {
+                        "token_id": 2285,
+                        "token": "json",
+                        "raw_likelihood": 0.0003745875146705657
+                    },
+                    {
+                        "token_id": 376,
+                        "token": "tr",
+                        "raw_likelihood": 0.00034416496055200696
+                    }
+                ],
+                "top_20_after_constraint": [
+                    {
+                        "token_id": 56416,
+                        "token": "rectangle",
+                        "raw_likelihood": 0.5233118534088135
+                    },
+                    {
+                        "token_id": 26942,
+                        "token": "circle",
+                        "raw_likelihood": 0.2356700748205185
+                    },
+                    {
+                        "token_id": 56214,
+                        "token": "triangle",
+                        "raw_likelihood": 0.20422755181789398
+                    },
+                    {
+                        "token_id": 2921,
+                        "token": "rect",
+                        "raw_likelihood": 0.0006997748860158026
+                    },
+                    {
+                        "token_id": 44398,
+                        "token": "circ",
+                        "raw_likelihood": 0.0004702154255937785
+                    },
+                    {
+                        "token_id": 23254,
+                        "token": "tri",
+                        "raw_likelihood": 0.0004340772284194827
+                    },
+                    {
+                        "token_id": 376,
+                        "token": "tr",
+                        "raw_likelihood": 0.00034416496055200696
+                    },
+                    {
+                        "token_id": 66,
+                        "token": "c",
+                        "raw_likelihood": 7.02270190231502e-05
+                    },
+                    {
+                        "token_id": 2827,
+                        "token": "rec",
+                        "raw_likelihood": 3.298327646916732e-05
+                    },
+                    {
+                        "token_id": 265,
+                        "token": "re",
+                        "raw_likelihood": 1.7308911992586218e-05
+                    },
+                    {
+                        "token_id": 83,
+                        "token": "t",
+                        "raw_likelihood": 7.750219992885832e-06
+                    },
+                    {
+                        "token_id": 58132,
+                        "token": "cir",
+                        "raw_likelihood": 3.377184384589782e-06
+                    },
+                    {
+                        "token_id": 81,
+                        "token": "r",
+                        "raw_likelihood": 1.3491066965798382e-06
+                    },
+                    {
+                        "token_id": 5979,
+                        "token": "ci",
+                        "raw_likelihood": 5.107877427690255e-07
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "metrics": {
+                    "step": 5,
+                    "n_accepted": 10,
+                    "acceptance_ratio": 7.79690618762475e-05,
+                    "prob_mass": {
+                        "total_prob_before_filter": 1.0000141859054565,
+                        "total_prob_after_filter": 0.9365877509117126,
+                        "max_prob_before_filter": 0.9268631339073181,
+                        "min_prob_before_filter": 1.7923069780168173e-14,
+                        "max_prob_after_filter": 0.9268631339073181,
+                        "min_prob_after_filter": 7.75753861148587e-08
+                    },
+                    "top_token_prob": 0.9268631339073181,
+                    "top_token": "\",",
+                    "actual_token_prob": 0.9268631339073181,
+                    "actual_token": "\",",
+                    "is_intervened": false
+                },
+                "top_20_before_constraint": [
+                    {
+                        "token_id": 498,
+                        "token": "\",",
+                        "raw_likelihood": 0.9268631339073181
+                    },
+                    {
+                        "token_id": 32075,
+                        "token": "\"}}",
+                        "raw_likelihood": 0.05172383785247803
+                    },
+                    {
+                        "token_id": 9388,
+                        "token": "\"}",
+                        "raw_likelihood": 0.006910014431923628
+                    },
+                    {
+                        "token_id": 14682,
+                        "token": "\"},",
+                        "raw_likelihood": 0.0035318490117788315
+                    },
+                    {
+                        "token_id": 64259,
+                        "token": "\"}\u010a\u010a",
+                        "raw_likelihood": 0.0033453991636633873
+                    },
+                    {
+                        "token_id": 17122,
+                        "token": "\"}\u010a",
+                        "raw_likelihood": 0.002854336053133011
+                    },
+                    {
+                        "token_id": 1,
+                        "token": "\"",
+                        "raw_likelihood": 0.001722155837342143
+                    },
+                    {
+                        "token_id": 2247,
+                        "token": "\",\"",
+                        "raw_likelihood": 0.0009607498068362474
+                    },
+                    {
+                        "token_id": 3343,
+                        "token": "\".",
+                        "raw_likelihood": 0.00014562049182131886
+                    },
+                    {
+                        "token_id": 7260,
+                        "token": "\"},\u010a",
+                        "raw_likelihood": 0.00014094074140302837
+                    },
+                    {
+                        "token_id": 96742,
+                        "token": "\"}}\u010a",
+                        "raw_likelihood": 0.00010770508379209787
+                    },
+                    {
+                        "token_id": 761,
+                        "token": "\",\u010a",
+                        "raw_likelihood": 8.339829946635291e-05
+                    },
+                    {
+                        "token_id": 1359,
+                        "token": ",\"",
+                        "raw_likelihood": 7.975228072609752e-05
+                    },
+                    {
+                        "token_id": 81254,
+                        "token": "\"})",
+                        "raw_likelihood": 6.801489507779479e-05
+                    },
+                    {
+                        "token_id": 37609,
+                        "token": "\"},{\"",
+                        "raw_likelihood": 6.353642675094306e-05
+                    },
+                    {
+                        "token_id": 794,
+                        "token": "\":",
+                        "raw_likelihood": 6.040365406079218e-05
+                    },
+                    {
+                        "token_id": 9737,
+                        "token": "}\",",
+                        "raw_likelihood": 4.8568432248430327e-05
+                    },
+                    {
+                        "token_id": 2186,
+                        "token": "},",
+                        "raw_likelihood": 3.620061761466786e-05
+                    },
+                    {
+                        "token_id": 79414,
+                        "token": "\"};\u010a\u010a",
+                        "raw_likelihood": 3.442175511736423e-05
+                    },
+                    {
+                        "token_id": 93546,
+                        "token": "\"]}",
+                        "raw_likelihood": 3.4033677366096526e-05
+                    }
+                ],
+                "top_20_after_constraint": [
+                    {
+                        "token_id": 498,
+                        "token": "\",",
+                        "raw_likelihood": 0.9268631339073181
+                    },
+                    {
+                        "token_id": 9388,
+                        "token": "\"}",
+                        "raw_likelihood": 0.006910014431923628
+                    },
+                    {
+                        "token_id": 1,
+                        "token": "\"",
+                        "raw_likelihood": 0.001722155837342143
+                    },
+                    {
+                        "token_id": 2247,
+                        "token": "\",\"",
+                        "raw_likelihood": 0.0009607498068362474
+                    },
+                    {
+                        "token_id": 761,
+                        "token": "\",\u010a",
+                        "raw_likelihood": 8.339829946635291e-05
+                    },
+                    {
+                        "token_id": 702,
+                        "token": "\"\u010a",
+                        "raw_likelihood": 2.8131536964792758e-05
+                    },
+                    {
+                        "token_id": 1875,
+                        "token": "\"\u010a\u010a",
+                        "raw_likelihood": 1.4603986528527457e-05
+                    },
+                    {
+                        "token_id": 26986,
+                        "token": "\",\u010a\u010a",
+                        "raw_likelihood": 2.959753601317061e-06
+                    },
+                    {
+                        "token_id": 15993,
+                        "token": "\"\u010a\u010a\u010a",
+                        "raw_likelihood": 2.5137628654192667e-06
+                    },
+                    {
+                        "token_id": 44708,
+                        "token": "\"\u010a\u010a\u010a\u010a",
+                        "raw_likelihood": 7.75753861148587e-08
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "metrics": {
+                    "step": 6,
+                    "n_accepted": 371,
+                    "acceptance_ratio": 0.0028926521956087825,
+                    "prob_mass": {
+                        "total_prob_before_filter": 1.0000070333480835,
+                        "total_prob_after_filter": 0.9979625344276428,
+                        "max_prob_before_filter": 0.9967727065086365,
+                        "min_prob_before_filter": 6.060562750438703e-14,
+                        "max_prob_after_filter": 0.9967727065086365,
+                        "min_prob_after_filter": 1.867074897465848e-11
+                    },
+                    "top_token_prob": 0.9967727065086365,
+                    "top_token": "\u0120\"",
+                    "actual_token_prob": 0.9967727065086365,
+                    "actual_token": "\u0120\"",
+                    "is_intervened": false
+                },
+                "top_20_before_constraint": [
+                    {
+                        "token_id": 330,
+                        "token": "\u0120\"",
+                        "raw_likelihood": 0.9967727065086365
+                    },
+                    {
+                        "token_id": 720,
+                        "token": "\u0120\u010a",
+                        "raw_likelihood": 0.0010943298693746328
+                    },
+                    {
+                        "token_id": 5312,
+                        "token": "\u0120\"$",
+                        "raw_likelihood": 0.0005552901420742273
+                    },
+                    {
+                        "token_id": 9177,
+                        "token": "\u0120\"_",
+                        "raw_likelihood": 0.0001937497581820935
+                    },
+                    {
+                        "token_id": 3500,
+                        "token": "}}",
+                        "raw_likelihood": 0.00012107299698982388
+                    },
+                    {
+                        "token_id": 8594,
+                        "token": "\u0120\"@",
+                        "raw_likelihood": 0.00011906743748113513
+                    },
+                    {
+                        "token_id": 534,
+                        "token": "}\u010a",
+                        "raw_likelihood": 8.415579941356555e-05
+                    },
+                    {
+                        "token_id": 1621,
+                        "token": "\u0120\"\"",
+                        "raw_likelihood": 7.892839494161308e-05
+                    },
+                    {
+                        "token_id": 220,
+                        "token": "\u0120",
+                        "raw_likelihood": 7.220524275908247e-05
+                    },
+                    {
+                        "token_id": 2564,
+                        "token": "\u0120...",
+                        "raw_likelihood": 6.388178007910028e-05
+                    },
+                    {
+                        "token_id": 92,
+                        "token": "}",
+                        "raw_likelihood": 4.9650887376628816e-05
+                    },
+                    {
+                        "token_id": 7966,
+                        "token": "}.",
+                        "raw_likelihood": 3.2411058782599866e-05
+                    },
+                    {
+                        "token_id": 6058,
+                        "token": "\u0120\".",
+                        "raw_likelihood": 3.147276947856881e-05
+                    },
+                    {
+                        "token_id": 1054,
+                        "token": "\u0120\u00e2\u0122\u013e",
+                        "raw_likelihood": 2.7136346034239978e-05
+                    },
+                    {
+                        "token_id": 81648,
+                        "token": "\u0120\"}",
+                        "raw_likelihood": 2.414792834315449e-05
+                    },
+                    {
+                        "token_id": 12262,
+                        "token": "\u0120\"(",
+                        "raw_likelihood": 2.2845408238936216e-05
+                    },
+                    {
+                        "token_id": 5993,
+                        "token": "\u0120\"#",
+                        "raw_likelihood": 2.2657724912278354e-05
+                    },
+                    {
+                        "token_id": 39813,
+                        "token": "\u0120\"...",
+                        "raw_likelihood": 2.154670983145479e-05
+                    },
+                    {
+                        "token_id": 13568,
+                        "token": "\u0120\"__",
+                        "raw_likelihood": 1.9013381461263634e-05
+                    },
+                    {
+                        "token_id": 5324,
+                        "token": "\u0120{\"",
+                        "raw_likelihood": 1.6794458133517765e-05
+                    }
+                ],
+                "top_20_after_constraint": [
+                    {
+                        "token_id": 330,
+                        "token": "\u0120\"",
+                        "raw_likelihood": 0.9967727065086365
+                    },
+                    {
+                        "token_id": 720,
+                        "token": "\u0120\u010a",
+                        "raw_likelihood": 0.0010943298693746328
+                    },
+                    {
+                        "token_id": 220,
+                        "token": "\u0120",
+                        "raw_likelihood": 7.220524275908247e-05
+                    },
+                    {
+                        "token_id": 2355,
+                        "token": "\u0120\u0120\u010a",
+                        "raw_likelihood": 1.02228677860694e-05
+                    },
+                    {
+                        "token_id": 4815,
+                        "token": "\u0120\u010a\u010a",
+                        "raw_likelihood": 3.4750389659166103e-06
+                    },
+                    {
+                        "token_id": 256,
+                        "token": "\u0120\u0120",
+                        "raw_likelihood": 8.14659244952054e-07
+                    },
+                    {
+                        "token_id": 1,
+                        "token": "\"",
+                        "raw_likelihood": 5.881400966245565e-07
+                    },
+                    {
+                        "token_id": 692,
+                        "token": "\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120",
+                        "raw_likelihood": 5.095693040857441e-07
+                    },
+                    {
+                        "token_id": 415,
+                        "token": "\u0120\u0120\u0120\u0120\u0120",
+                        "raw_likelihood": 4.2323458160353766e-07
+                    },
+                    {
+                        "token_id": 262,
+                        "token": "\u0120\u0120\u0120",
+                        "raw_likelihood": 4.0092871245178685e-07
+                    },
+                    {
+                        "token_id": 286,
+                        "token": "\u0120\u0120\u0120\u0120\u0120\u0120\u0120",
+                        "raw_likelihood": 3.9811871488382167e-07
+                    },
+                    {
+                        "token_id": 1432,
+                        "token": "\u010a\u010a\u010a",
+                        "raw_likelihood": 3.6812903658756113e-07
+                    },
+                    {
+                        "token_id": 5351,
+                        "token": "\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120",
+                        "raw_likelihood": 3.542326396654971e-07
+                    },
+                    {
+                        "token_id": 1602,
+                        "token": "\u0109\u010a",
+                        "raw_likelihood": 3.215177741822117e-07
+                    },
+                    {
+                        "token_id": 1078,
+                        "token": "\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120",
+                        "raw_likelihood": 2.5500648348497634e-07
+                    },
+                    {
+                        "token_id": 58040,
+                        "token": "\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120",
+                        "raw_likelihood": 2.0166075387351157e-07
+                    },
+                    {
+                        "token_id": 2451,
+                        "token": "\u0109\u0109\u010a",
+                        "raw_likelihood": 1.9174568421931326e-07
+                    },
+                    {
+                        "token_id": 394,
+                        "token": "\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120",
+                        "raw_likelihood": 1.7876669744509854e-07
+                    },
+                    {
+                        "token_id": 310,
+                        "token": "\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120",
+                        "raw_likelihood": 1.6811846137443354e-07
+                    },
+                    {
+                        "token_id": 1827,
+                        "token": "\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u010a",
+                        "raw_likelihood": 1.6005498082449776e-07
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "metrics": {
+                    "step": 7,
+                    "n_accepted": 4,
+                    "acceptance_ratio": 3.1187624750499e-05,
+                    "prob_mass": {
+                        "total_prob_before_filter": 1.0000444650650024,
+                        "total_prob_after_filter": 0.060835838317871094,
+                        "max_prob_before_filter": 0.3268185257911682,
+                        "min_prob_before_filter": 3.0042583546753543e-13,
+                        "max_prob_after_filter": 0.060812707990407944,
+                        "min_prob_after_filter": 1.6990355788948364e-07
+                    },
+                    "top_token_prob": 0.3268185257911682,
+                    "top_token": "type",
+                    "actual_token_prob": 0.060812707990407944,
+                    "actual_token": "width",
+                    "is_intervened": true
+                },
+                "top_20_before_constraint": [
+                    {
+                        "token_id": 1337,
+                        "token": "type",
+                        "raw_likelihood": 0.3268185257911682
+                    },
+                    {
+                        "token_id": 3231,
+                        "token": "base",
+                        "raw_likelihood": 0.2913150489330292
+                    },
+                    {
+                        "token_id": 13495,
+                        "token": "properties",
+                        "raw_likelihood": 0.18211053311824799
+                    },
+                    {
+                        "token_id": 3175,
+                        "token": "width",
+                        "raw_likelihood": 0.060812707990407944
+                    },
+                    {
+                        "token_id": 6413,
+                        "token": "required",
+                        "raw_likelihood": 0.05703973397612572
+                    },
+                    {
+                        "token_id": 4222,
+                        "token": "length",
+                        "raw_likelihood": 0.025732094421982765
+                    },
+                    {
+                        "token_id": 2627,
+                        "token": "height",
+                        "raw_likelihood": 0.010013815946877003
+                    },
+                    {
+                        "token_id": 609,
+                        "token": "name",
+                        "raw_likelihood": 0.003393798368051648
+                    },
+                    {
+                        "token_id": 970,
+                        "token": "value",
+                        "raw_likelihood": 0.0031308159232139587
+                    },
+                    {
+                        "token_id": 4789,
+                        "token": "description",
+                        "raw_likelihood": 0.0029734838753938675
+                    },
+                    {
+                        "token_id": 307,
+                        "token": "id",
+                        "raw_likelihood": 0.0015954237896949053
+                    },
+                    {
+                        "token_id": 27813,
+                        "token": "radius",
+                        "raw_likelihood": 0.0015868199989199638
+                    },
+                    {
+                        "token_id": 4903,
+                        "token": "area",
+                        "raw_likelihood": 0.0011002509854733944
+                    },
+                    {
+                        "token_id": 87,
+                        "token": "x",
+                        "raw_likelihood": 0.0010843259515240788
+                    },
+                    {
+                        "token_id": 14105,
+                        "token": "parameters",
+                        "raw_likelihood": 0.0009472842211835086
+                    },
+                    {
+                        "token_id": 4866,
+                        "token": "props",
+                        "raw_likelihood": 0.0009038945427164435
+                    },
+                    {
+                        "token_id": 13099,
+                        "token": "optional",
+                        "raw_likelihood": 0.0008753079455345869
+                    },
+                    {
+                        "token_id": 695,
+                        "token": "data",
+                        "raw_likelihood": 0.0007530709262937307
+                    },
+                    {
+                        "token_id": 3784,
+                        "token": "property",
+                        "raw_likelihood": 0.0006927162175998092
+                    },
+                    {
+                        "token_id": 3745,
+                        "token": "values",
+                        "raw_likelihood": 0.0006803500582464039
+                    }
+                ],
+                "top_20_after_constraint": [
+                    {
+                        "token_id": 3175,
+                        "token": "width",
+                        "raw_likelihood": 0.060812707990407944
+                    },
+                    {
+                        "token_id": 86,
+                        "token": "w",
+                        "raw_likelihood": 1.2548674021672923e-05
+                    },
+                    {
+                        "token_id": 44715,
+                        "token": "wid",
+                        "raw_likelihood": 1.040750248648692e-05
+                    },
+                    {
+                        "token_id": 17043,
+                        "token": "wi",
+                        "raw_likelihood": 1.6990355788948364e-07
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "metrics": {
+                    "step": 8,
+                    "n_accepted": 9,
+                    "acceptance_ratio": 7.017215568862275e-05,
+                    "prob_mass": {
+                        "total_prob_before_filter": 1.0000102519989014,
+                        "total_prob_after_filter": 0.9989044666290283,
+                        "max_prob_before_filter": 0.9988620281219482,
+                        "min_prob_before_filter": 9.338273969199118e-15,
+                        "max_prob_after_filter": 0.9988620281219482,
+                        "min_prob_after_filter": 1.704421670467582e-08
+                    },
+                    "top_token_prob": 0.9988620281219482,
+                    "top_token": "\":",
+                    "actual_token_prob": 0.9988620281219482,
+                    "actual_token": "\":",
+                    "is_intervened": false
+                },
+                "top_20_before_constraint": [
+                    {
+                        "token_id": 794,
+                        "token": "\":",
+                        "raw_likelihood": 0.9988620281219482
+                    },
+                    {
+                        "token_id": 82,
+                        "token": "s",
+                        "raw_likelihood": 0.0004154097114223987
+                    },
+                    {
+                        "token_id": 3332,
+                        "token": "\":\"",
+                        "raw_likelihood": 9.809959010453895e-05
+                    },
+                    {
+                        "token_id": 498,
+                        "token": "\",",
+                        "raw_likelihood": 5.5054653785191476e-05
+                    },
+                    {
+                        "token_id": 1,
+                        "token": "\"",
+                        "raw_likelihood": 3.4131535358028486e-05
+                    },
+                    {
+                        "token_id": 23118,
+                        "token": "\":{\"",
+                        "raw_likelihood": 1.9243956558057107e-05
+                    },
+                    {
+                        "token_id": 11955,
+                        "token": "\\\":",
+                        "raw_likelihood": 1.6014011634979397e-05
+                    },
+                    {
+                        "token_id": 96618,
+                        "token": "**:",
+                        "raw_likelihood": 1.5442528820130974e-05
+                    },
+                    {
+                        "token_id": 61867,
+                        "token": "\":\"\",\"",
+                        "raw_likelihood": 1.4402697161131073e-05
+                    },
+                    {
+                        "token_id": 16,
+                        "token": "1",
+                        "raw_likelihood": 1.1691768122545909e-05
+                    },
+                    {
+                        "token_id": 760,
+                        "token": "\">",
+                        "raw_likelihood": 1.1535285011632368e-05
+                    },
+                    {
+                        "token_id": 7408,
+                        "token": "_min",
+                        "raw_likelihood": 9.740929272084031e-06
+                    },
+                    {
+                        "token_id": 1265,
+                        "token": "_in",
+                        "raw_likelihood": 7.678090696572326e-06
+                    },
+                    {
+                        "token_id": 3292,
+                        "token": "_x",
+                        "raw_likelihood": 7.548996563855326e-06
+                    },
+                    {
+                        "token_id": 13320,
+                        "token": "\u0120\":",
+                        "raw_likelihood": 6.8299668782856315e-06
+                    },
+                    {
+                        "token_id": 32075,
+                        "token": "\"}}",
+                        "raw_likelihood": 6.798027698096121e-06
+                    },
+                    {
+                        "token_id": 4764,
+                        "token": "\":\u010a",
+                        "raw_likelihood": 5.407711796578951e-06
+                    },
+                    {
+                        "token_id": 646,
+                        "token": "_s",
+                        "raw_likelihood": 5.076311936136335e-06
+                    },
+                    {
+                        "token_id": 67682,
+                        "token": "\":[{\"",
+                        "raw_likelihood": 4.441306373337284e-06
+                    },
+                    {
+                        "token_id": 9755,
+                        "token": "_height",
+                        "raw_likelihood": 4.161420292803086e-06
+                    }
+                ],
+                "top_20_after_constraint": [
+                    {
+                        "token_id": 794,
+                        "token": "\":",
+                        "raw_likelihood": 0.9988620281219482
+                    },
+                    {
+                        "token_id": 1,
+                        "token": "\"",
+                        "raw_likelihood": 3.4131535358028486e-05
+                    },
+                    {
+                        "token_id": 4764,
+                        "token": "\":\u010a",
+                        "raw_likelihood": 5.407711796578951e-06
+                    },
+                    {
+                        "token_id": 702,
+                        "token": "\"\u010a",
+                        "raw_likelihood": 1.5181316257439903e-06
+                    },
+                    {
+                        "token_id": 52518,
+                        "token": "\":\u010a\u010a",
+                        "raw_likelihood": 8.833632136884262e-07
+                    },
+                    {
+                        "token_id": 1875,
+                        "token": "\"\u010a\u010a",
+                        "raw_likelihood": 2.572222115304612e-07
+                    },
+                    {
+                        "token_id": 15993,
+                        "token": "\"\u010a\u010a\u010a",
+                        "raw_likelihood": 1.535264573249151e-07
+                    },
+                    {
+                        "token_id": 53152,
+                        "token": "\":-",
+                        "raw_likelihood": 3.076112520261631e-08
+                    },
+                    {
+                        "token_id": 44708,
+                        "token": "\"\u010a\u010a\u010a\u010a",
+                        "raw_likelihood": 1.704421670467582e-08
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "metrics": {
+                    "step": 9,
+                    "n_accepted": 1370,
+                    "acceptance_ratio": 0.010681761477045908,
+                    "prob_mass": {
+                        "total_prob_before_filter": 1.0000251531600952,
+                        "total_prob_after_filter": 0.6466631889343262,
+                        "max_prob_before_filter": 0.6464817523956299,
+                        "min_prob_before_filter": 9.540933039280108e-14,
+                        "max_prob_after_filter": 0.6464817523956299,
+                        "min_prob_after_filter": 2.6431905709306536e-12
+                    },
+                    "top_token_prob": 0.6464817523956299,
+                    "top_token": "\u0120",
+                    "actual_token_prob": 0.6464817523956299,
+                    "actual_token": "\u0120",
+                    "is_intervened": false
+                },
+                "top_20_before_constraint": [
+                    {
+                        "token_id": 220,
+                        "token": "\u0120",
+                        "raw_likelihood": 0.6464817523956299
+                    },
+                    {
+                        "token_id": 330,
+                        "token": "\u0120\"",
+                        "raw_likelihood": 0.3357660174369812
+                    },
+                    {
+                        "token_id": 5324,
+                        "token": "\u0120{\"",
+                        "raw_likelihood": 0.008676701225340366
+                    },
+                    {
+                        "token_id": 854,
+                        "token": "\u0120null",
+                        "raw_likelihood": 0.0018300549127161503
+                    },
+                    {
+                        "token_id": 314,
+                        "token": "\u0120{",
+                        "raw_likelihood": 0.0014808623818680644
+                    },
+                    {
+                        "token_id": 510,
+                        "token": "\u0120[",
+                        "raw_likelihood": 0.0013554237084463239
+                    },
+                    {
+                        "token_id": 10768,
+                        "token": "\u0120\"[",
+                        "raw_likelihood": 0.000585998292081058
+                    },
+                    {
+                        "token_id": 837,
+                        "token": "\u0120true",
+                        "raw_likelihood": 0.0004126238345634192
+                    },
+                    {
+                        "token_id": 4482,
+                        "token": "\u0120[\"",
+                        "raw_likelihood": 0.0004006426315754652
+                    },
+                    {
+                        "token_id": 5312,
+                        "token": "\u0120\"$",
+                        "raw_likelihood": 0.00021651832503266633
+                    },
+                    {
+                        "token_id": 62853,
+                        "token": "\u0120[{\"",
+                        "raw_likelihood": 0.00017452692554797977
+                    },
+                    {
+                        "token_id": 482,
+                        "token": "\u0120-",
+                        "raw_likelihood": 0.00016506723477505147
+                    },
+                    {
+                        "token_id": 1396,
+                        "token": "\u0120number",
+                        "raw_likelihood": 0.00014501516125164926
+                    },
+                    {
+                        "token_id": 14190,
+                        "token": "\u0120\"{",
+                        "raw_likelihood": 0.00011886173160746694
+                    },
+                    {
+                        "token_id": 3605,
+                        "token": "\u0120\"/",
+                        "raw_likelihood": 0.00011502623237902299
+                    },
+                    {
+                        "token_id": 4145,
+                        "token": "\u0120\"<",
+                        "raw_likelihood": 8.755876478971913e-05
+                    },
+                    {
+                        "token_id": 5732,
+                        "token": "\u0120undefined",
+                        "raw_likelihood": 8.020122186280787e-05
+                    },
+                    {
+                        "token_id": 6660,
+                        "token": "\u0120\"-",
+                        "raw_likelihood": 7.527908746851608e-05
+                    },
+                    {
+                        "token_id": 2273,
+                        "token": "\u0120float",
+                        "raw_likelihood": 7.44086573831737e-05
+                    },
+                    {
+                        "token_id": 7492,
+                        "token": "\u0120\"\",",
+                        "raw_likelihood": 6.12087023910135e-05
+                    }
+                ],
+                "top_20_after_constraint": [
+                    {
+                        "token_id": 220,
+                        "token": "\u0120",
+                        "raw_likelihood": 0.6464817523956299
+                    },
+                    {
+                        "token_id": 482,
+                        "token": "\u0120-",
+                        "raw_likelihood": 0.00016506723477505147
+                    },
+                    {
+                        "token_id": 16,
+                        "token": "1",
+                        "raw_likelihood": 1.3061130630376283e-06
+                    },
+                    {
+                        "token_id": 605,
+                        "token": "10",
+                        "raw_likelihood": 1.167627829090634e-06
+                    },
+                    {
+                        "token_id": 18,
+                        "token": "3",
+                        "raw_likelihood": 5.772536155745911e-07
+                    },
+                    {
+                        "token_id": 20,
+                        "token": "5",
+                        "raw_likelihood": 3.3918163921953237e-07
+                    },
+                    {
+                        "token_id": 1691,
+                        "token": "21",
+                        "raw_likelihood": 3.1512075793216354e-07
+                    },
+                    {
+                        "token_id": 17,
+                        "token": "2",
+                        "raw_likelihood": 3.0041260856705776e-07
+                    },
+                    {
+                        "token_id": 720,
+                        "token": "\u0120\u010a",
+                        "raw_likelihood": 2.951783244498074e-07
+                    },
+                    {
+                        "token_id": 4513,
+                        "token": "123",
+                        "raw_likelihood": 2.733306132540747e-07
+                    },
+                    {
+                        "token_id": 717,
+                        "token": "12",
+                        "raw_likelihood": 2.668583931608737e-07
+                    },
+                    {
+                        "token_id": 508,
+                        "token": "20",
+                        "raw_likelihood": 2.665328224793484e-07
+                    },
+                    {
+                        "token_id": 1135,
+                        "token": "50",
+                        "raw_likelihood": 2.490650388153881e-07
+                    },
+                    {
+                        "token_id": 7163,
+                        "token": "\u0120\u0109",
+                        "raw_likelihood": 2.4061009185061266e-07
+                    },
+                    {
+                        "token_id": 868,
+                        "token": "15",
+                        "raw_likelihood": 2.3792213710294163e-07
+                    },
+                    {
+                        "token_id": 24,
+                        "token": "9",
+                        "raw_likelihood": 2.2531278887072403e-07
+                    },
+                    {
+                        "token_id": 21,
+                        "token": "6",
+                        "raw_likelihood": 2.1842436126462417e-07
+                    },
+                    {
+                        "token_id": 19,
+                        "token": "4",
+                        "raw_likelihood": 2.125479596770674e-07
+                    },
+                    {
+                        "token_id": 914,
+                        "token": "25",
+                        "raw_likelihood": 2.1166903252378688e-07
+                    },
+                    {
+                        "token_id": 15,
+                        "token": "0",
+                        "raw_likelihood": 1.8812558266745327e-07
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "metrics": {
+                    "step": 10,
+                    "n_accepted": 1370,
+                    "acceptance_ratio": 0.010681761477045908,
+                    "prob_mass": {
+                        "total_prob_before_filter": 1.0000332593917847,
+                        "total_prob_after_filter": 0.9997844099998474,
+                        "max_prob_before_filter": 0.44301819801330566,
+                        "min_prob_before_filter": 3.422979673144144e-13,
+                        "max_prob_after_filter": 0.44301819801330566,
+                        "min_prob_after_filter": 2.255132929354642e-12
+                    },
+                    "top_token_prob": 0.44301819801330566,
+                    "top_token": "10",
+                    "actual_token_prob": 0.44301819801330566,
+                    "actual_token": "10",
+                    "is_intervened": false
+                },
+                "top_20_before_constraint": [
+                    {
+                        "token_id": 605,
+                        "token": "10",
+                        "raw_likelihood": 0.44301819801330566
+                    },
+                    {
+                        "token_id": 20,
+                        "token": "5",
+                        "raw_likelihood": 0.15233050286769867
+                    },
+                    {
+                        "token_id": 1041,
+                        "token": "100",
+                        "raw_likelihood": 0.07511278241872787
+                    },
+                    {
+                        "token_id": 17,
+                        "token": "2",
+                        "raw_likelihood": 0.05794300138950348
+                    },
+                    {
+                        "token_id": 16,
+                        "token": "1",
+                        "raw_likelihood": 0.05493283271789551
+                    },
+                    {
+                        "token_id": 19,
+                        "token": "4",
+                        "raw_likelihood": 0.04825471341609955
+                    },
+                    {
+                        "token_id": 18,
+                        "token": "3",
+                        "raw_likelihood": 0.0276283398270607
+                    },
+                    {
+                        "token_id": 15,
+                        "token": "0",
+                        "raw_likelihood": 0.026386436074972153
+                    },
+                    {
+                        "token_id": 508,
+                        "token": "20",
+                        "raw_likelihood": 0.022228635847568512
+                    },
+                    {
+                        "token_id": 1135,
+                        "token": "50",
+                        "raw_likelihood": 0.013521055690944195
+                    },
+                    {
+                        "token_id": 23,
+                        "token": "8",
+                        "raw_likelihood": 0.011874780058860779
+                    },
+                    {
+                        "token_id": 21,
+                        "token": "6",
+                        "raw_likelihood": 0.009457509033381939
+                    },
+                    {
+                        "token_id": 717,
+                        "token": "12",
+                        "raw_likelihood": 0.004813142120838165
+                    },
+                    {
+                        "token_id": 966,
+                        "token": "30",
+                        "raw_likelihood": 0.0046148961409926414
+                    },
+                    {
+                        "token_id": 1049,
+                        "token": "200",
+                        "raw_likelihood": 0.00456989137455821
+                    },
+                    {
+                        "token_id": 868,
+                        "token": "15",
+                        "raw_likelihood": 0.003680557943880558
+                    },
+                    {
+                        "token_id": 22,
+                        "token": "7",
+                        "raw_likelihood": 0.0031059568282216787
+                    },
+                    {
+                        "token_id": 1272,
+                        "token": "40",
+                        "raw_likelihood": 0.0025459302123636007
+                    },
+                    {
+                        "token_id": 2636,
+                        "token": "500",
+                        "raw_likelihood": 0.0022103607188910246
+                    },
+                    {
+                        "token_id": 914,
+                        "token": "25",
+                        "raw_likelihood": 0.0021100181620568037
+                    }
+                ],
+                "top_20_after_constraint": [
+                    {
+                        "token_id": 605,
+                        "token": "10",
+                        "raw_likelihood": 0.44301819801330566
+                    },
+                    {
+                        "token_id": 20,
+                        "token": "5",
+                        "raw_likelihood": 0.15233050286769867
+                    },
+                    {
+                        "token_id": 1041,
+                        "token": "100",
+                        "raw_likelihood": 0.07511278241872787
+                    },
+                    {
+                        "token_id": 17,
+                        "token": "2",
+                        "raw_likelihood": 0.05794300138950348
+                    },
+                    {
+                        "token_id": 16,
+                        "token": "1",
+                        "raw_likelihood": 0.05493283271789551
+                    },
+                    {
+                        "token_id": 19,
+                        "token": "4",
+                        "raw_likelihood": 0.04825471341609955
+                    },
+                    {
+                        "token_id": 18,
+                        "token": "3",
+                        "raw_likelihood": 0.0276283398270607
+                    },
+                    {
+                        "token_id": 15,
+                        "token": "0",
+                        "raw_likelihood": 0.026386436074972153
+                    },
+                    {
+                        "token_id": 508,
+                        "token": "20",
+                        "raw_likelihood": 0.022228635847568512
+                    },
+                    {
+                        "token_id": 1135,
+                        "token": "50",
+                        "raw_likelihood": 0.013521055690944195
+                    },
+                    {
+                        "token_id": 23,
+                        "token": "8",
+                        "raw_likelihood": 0.011874780058860779
+                    },
+                    {
+                        "token_id": 21,
+                        "token": "6",
+                        "raw_likelihood": 0.009457509033381939
+                    },
+                    {
+                        "token_id": 717,
+                        "token": "12",
+                        "raw_likelihood": 0.004813142120838165
+                    },
+                    {
+                        "token_id": 966,
+                        "token": "30",
+                        "raw_likelihood": 0.0046148961409926414
+                    },
+                    {
+                        "token_id": 1049,
+                        "token": "200",
+                        "raw_likelihood": 0.00456989137455821
+                    },
+                    {
+                        "token_id": 868,
+                        "token": "15",
+                        "raw_likelihood": 0.003680557943880558
+                    },
+                    {
+                        "token_id": 22,
+                        "token": "7",
+                        "raw_likelihood": 0.0031059568282216787
+                    },
+                    {
+                        "token_id": 1272,
+                        "token": "40",
+                        "raw_likelihood": 0.0025459302123636007
+                    },
+                    {
+                        "token_id": 2636,
+                        "token": "500",
+                        "raw_likelihood": 0.0022103607188910246
+                    },
+                    {
+                        "token_id": 914,
+                        "token": "25",
+                        "raw_likelihood": 0.0021100181620568037
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "metrics": {
+                    "step": 11,
+                    "n_accepted": 1483,
+                    "acceptance_ratio": 0.011562811876247504,
+                    "prob_mass": {
+                        "total_prob_before_filter": 1.0000325441360474,
+                        "total_prob_after_filter": 0.18408577144145966,
+                        "max_prob_before_filter": 0.7198647856712341,
+                        "min_prob_before_filter": 6.572756119753442e-13,
+                        "max_prob_after_filter": 0.1608433574438095,
+                        "min_prob_after_filter": 2.5381809501401342e-11
+                    },
+                    "top_token_prob": 0.7198647856712341,
+                    "top_token": ",",
+                    "actual_token_prob": 0.1608433574438095,
+                    "actual_token": ".",
+                    "is_intervened": true
+                },
+                "top_20_before_constraint": [
+                    {
+                        "token_id": 11,
+                        "token": ",",
+                        "raw_likelihood": 0.7198647856712341
+                    },
+                    {
+                        "token_id": 13,
+                        "token": ".",
+                        "raw_likelihood": 0.1608433574438095
+                    },
+                    {
+                        "token_id": 2186,
+                        "token": "},",
+                        "raw_likelihood": 0.05203783139586449
+                    },
+                    {
+                        "token_id": 92,
+                        "token": "}",
+                        "raw_likelihood": 0.023001622408628464
+                    },
+                    {
+                        "token_id": 3500,
+                        "token": "}}",
+                        "raw_likelihood": 0.01208273321390152
+                    },
+                    {
+                        "token_id": 1359,
+                        "token": ",\"",
+                        "raw_likelihood": 0.010485653765499592
+                    },
+                    {
+                        "token_id": 534,
+                        "token": "}\u010a",
+                        "raw_likelihood": 0.0033699667546898127
+                    },
+                    {
+                        "token_id": 39254,
+                        "token": "}},",
+                        "raw_likelihood": 0.0025895219296216965
+                    },
+                    {
+                        "token_id": 10064,
+                        "token": "}\"",
+                        "raw_likelihood": 0.002064054599031806
+                    },
+                    {
+                        "token_id": 11498,
+                        "token": "}}\u010a",
+                        "raw_likelihood": 0.0015382786514237523
+                    },
+                    {
+                        "token_id": 32075,
+                        "token": "\"}}",
+                        "raw_likelihood": 0.0011785711394622922
+                    },
+                    {
+                        "token_id": 498,
+                        "token": "\",",
+                        "raw_likelihood": 0.0008638594881631434
+                    },
+                    {
+                        "token_id": 9737,
+                        "token": "}\",",
+                        "raw_likelihood": 0.000717981019988656
+                    },
+                    {
+                        "token_id": 633,
+                        "token": "}\u010a\u010a",
+                        "raw_likelihood": 0.0006354289362207055
+                    },
+                    {
+                        "token_id": 37928,
+                        "token": "},{\"",
+                        "raw_likelihood": 0.0005637583089992404
+                    },
+                    {
+                        "token_id": 1613,
+                        "token": "},\u010a",
+                        "raw_likelihood": 0.0005160780856385827
+                    },
+                    {
+                        "token_id": 330,
+                        "token": "\u0120\"",
+                        "raw_likelihood": 0.00044441051431931555
+                    },
+                    {
+                        "token_id": 2529,
+                        "token": "\u0120},",
+                        "raw_likelihood": 0.00033533229725435376
+                    },
+                    {
+                        "token_id": 98319,
+                        "token": "**,",
+                        "raw_likelihood": 0.00032107430160976946
+                    },
+                    {
+                        "token_id": 14682,
+                        "token": "\"},",
+                        "raw_likelihood": 0.0002889604074880481
+                    }
+                ],
+                "top_20_after_constraint": [
+                    {
+                        "token_id": 13,
+                        "token": ".",
+                        "raw_likelihood": 0.1608433574438095
+                    },
+                    {
+                        "token_id": 92,
+                        "token": "}",
+                        "raw_likelihood": 0.023001622408628464
+                    },
+                    {
+                        "token_id": 335,
+                        "token": "\u0120}",
+                        "raw_likelihood": 0.00017706348444335163
+                    },
+                    {
+                        "token_id": 198,
+                        "token": "\u010a",
+                        "raw_likelihood": 2.3926628273329698e-05
+                    },
+                    {
+                        "token_id": 68,
+                        "token": "e",
+                        "raw_likelihood": 2.2028792955097742e-05
+                    },
+                    {
+                        "token_id": 271,
+                        "token": "\u010a\u010a",
+                        "raw_likelihood": 4.330290721554775e-06
+                    },
+                    {
+                        "token_id": 220,
+                        "token": "\u0120",
+                        "raw_likelihood": 2.0630202470783843e-06
+                    },
+                    {
+                        "token_id": 197,
+                        "token": "\u0109",
+                        "raw_likelihood": 1.0638565299814218e-06
+                    },
+                    {
+                        "token_id": 1038,
+                        "token": "\u010a\u010a\u010a\u010a",
+                        "raw_likelihood": 1.0595623507470009e-06
+                    },
+                    {
+                        "token_id": 36,
+                        "token": "E",
+                        "raw_likelihood": 8.307357006742677e-07
+                    },
+                    {
+                        "token_id": 1432,
+                        "token": "\u010a\u010a\u010a",
+                        "raw_likelihood": 7.500721608266758e-07
+                    },
+                    {
+                        "token_id": 931,
+                        "token": "000",
+                        "raw_likelihood": 5.547187242882501e-07
+                    },
+                    {
+                        "token_id": 7361,
+                        "token": "\u010a\u0120\u0120\u0120\u0120\u010a",
+                        "raw_likelihood": 3.829620425221947e-07
+                    },
+                    {
+                        "token_id": 9122,
+                        "token": "\u010a\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u010a",
+                        "raw_likelihood": 2.439423383293615e-07
+                    },
+                    {
+                        "token_id": 5244,
+                        "token": "\u010a\u010a\u010a\u010a\u010a\u010a",
+                        "raw_likelihood": 2.3476333410599182e-07
+                    },
+                    {
+                        "token_id": 18108,
+                        "token": "\u010a\u0109\u010a",
+                        "raw_likelihood": 2.2848915648410184e-07
+                    },
+                    {
+                        "token_id": 7163,
+                        "token": "\u0120\u0109",
+                        "raw_likelihood": 2.1161217489407136e-07
+                    },
+                    {
+                        "token_id": 15,
+                        "token": "0",
+                        "raw_likelihood": 1.8363017773026513e-07
+                    },
+                    {
+                        "token_id": 256,
+                        "token": "\u0120\u0120",
+                        "raw_likelihood": 1.7620713776977937e-07
+                    },
+                    {
+                        "token_id": 2829,
+                        "token": "\u0109\u0120\u0120\u0120",
+                        "raw_likelihood": 1.4948659554647747e-07
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "metrics": {
+                    "step": 12,
+                    "n_accepted": 1110,
+                    "acceptance_ratio": 0.008654565868263473,
+                    "prob_mass": {
+                        "total_prob_before_filter": 1.0000473260879517,
+                        "total_prob_after_filter": 0.9963659644126892,
+                        "max_prob_before_filter": 0.8087618947029114,
+                        "min_prob_before_filter": 2.857590683177924e-12,
+                        "max_prob_after_filter": 0.8087618947029114,
+                        "min_prob_after_filter": 2.301439963048324e-06
+                    },
+                    "top_token_prob": 0.8087618947029114,
+                    "top_token": "0",
+                    "actual_token_prob": 0.8087618947029114,
+                    "actual_token": "0",
+                    "is_intervened": false
+                },
+                "top_20_before_constraint": [
+                    {
+                        "token_id": 15,
+                        "token": "0",
+                        "raw_likelihood": 0.8087618947029114
+                    },
+                    {
+                        "token_id": 20,
+                        "token": "5",
+                        "raw_likelihood": 0.059098634868860245
+                    },
+                    {
+                        "token_id": 17,
+                        "token": "2",
+                        "raw_likelihood": 0.020245296880602837
+                    },
+                    {
+                        "token_id": 16,
+                        "token": "1",
+                        "raw_likelihood": 0.01001719944179058
+                    },
+                    {
+                        "token_id": 18,
+                        "token": "3",
+                        "raw_likelihood": 0.006798588205128908
+                    },
+                    {
+                        "token_id": 19,
+                        "token": "4",
+                        "raw_likelihood": 0.004839808214455843
+                    },
+                    {
+                        "token_id": 21,
+                        "token": "6",
+                        "raw_likelihood": 0.004014278762042522
+                    },
+                    {
+                        "token_id": 23,
+                        "token": "8",
+                        "raw_likelihood": 0.0038677167613059282
+                    },
+                    {
+                        "token_id": 931,
+                        "token": "000",
+                        "raw_likelihood": 0.0033268940169364214
+                    },
+                    {
+                        "token_id": 24,
+                        "token": "9",
+                        "raw_likelihood": 0.003238607896491885
+                    },
+                    {
+                        "token_id": 22,
+                        "token": "7",
+                        "raw_likelihood": 0.003022361546754837
+                    },
+                    {
+                        "token_id": 410,
+                        "token": "00",
+                        "raw_likelihood": 0.0022647022269666195
+                    },
+                    {
+                        "token_id": 1419,
+                        "token": "23",
+                        "raw_likelihood": 0.002129492349922657
+                    },
+                    {
+                        "token_id": 914,
+                        "token": "25",
+                        "raw_likelihood": 0.001758337253704667
+                    },
+                    {
+                        "token_id": 4513,
+                        "token": "123",
+                        "raw_likelihood": 0.0016823739279061556
+                    },
+                    {
+                        "token_id": 1484,
+                        "token": "99",
+                        "raw_likelihood": 0.0012517970753833652
+                    },
+                    {
+                        "token_id": 3487,
+                        "token": "56",
+                        "raw_likelihood": 0.0011867836583405733
+                    },
+                    {
+                        "token_id": 1958,
+                        "token": "34",
+                        "raw_likelihood": 0.0011340894270688295
+                    },
+                    {
+                        "token_id": 1721,
+                        "token": "01",
+                        "raw_likelihood": 0.0010068952105939388
+                    },
+                    {
+                        "token_id": 717,
+                        "token": "12",
+                        "raw_likelihood": 0.0009445024188607931
+                    }
+                ],
+                "top_20_after_constraint": [
+                    {
+                        "token_id": 15,
+                        "token": "0",
+                        "raw_likelihood": 0.8087618947029114
+                    },
+                    {
+                        "token_id": 20,
+                        "token": "5",
+                        "raw_likelihood": 0.059098634868860245
+                    },
+                    {
+                        "token_id": 17,
+                        "token": "2",
+                        "raw_likelihood": 0.020245296880602837
+                    },
+                    {
+                        "token_id": 16,
+                        "token": "1",
+                        "raw_likelihood": 0.01001719944179058
+                    },
+                    {
+                        "token_id": 18,
+                        "token": "3",
+                        "raw_likelihood": 0.006798588205128908
+                    },
+                    {
+                        "token_id": 19,
+                        "token": "4",
+                        "raw_likelihood": 0.004839808214455843
+                    },
+                    {
+                        "token_id": 21,
+                        "token": "6",
+                        "raw_likelihood": 0.004014278762042522
+                    },
+                    {
+                        "token_id": 23,
+                        "token": "8",
+                        "raw_likelihood": 0.0038677167613059282
+                    },
+                    {
+                        "token_id": 931,
+                        "token": "000",
+                        "raw_likelihood": 0.0033268940169364214
+                    },
+                    {
+                        "token_id": 24,
+                        "token": "9",
+                        "raw_likelihood": 0.003238607896491885
+                    },
+                    {
+                        "token_id": 22,
+                        "token": "7",
+                        "raw_likelihood": 0.003022361546754837
+                    },
+                    {
+                        "token_id": 410,
+                        "token": "00",
+                        "raw_likelihood": 0.0022647022269666195
+                    },
+                    {
+                        "token_id": 1419,
+                        "token": "23",
+                        "raw_likelihood": 0.002129492349922657
+                    },
+                    {
+                        "token_id": 914,
+                        "token": "25",
+                        "raw_likelihood": 0.001758337253704667
+                    },
+                    {
+                        "token_id": 4513,
+                        "token": "123",
+                        "raw_likelihood": 0.0016823739279061556
+                    },
+                    {
+                        "token_id": 1484,
+                        "token": "99",
+                        "raw_likelihood": 0.0012517970753833652
+                    },
+                    {
+                        "token_id": 3487,
+                        "token": "56",
+                        "raw_likelihood": 0.0011867836583405733
+                    },
+                    {
+                        "token_id": 1958,
+                        "token": "34",
+                        "raw_likelihood": 0.0011340894270688295
+                    },
+                    {
+                        "token_id": 1721,
+                        "token": "01",
+                        "raw_likelihood": 0.0010068952105939388
+                    },
+                    {
+                        "token_id": 717,
+                        "token": "12",
+                        "raw_likelihood": 0.0009445024188607931
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "metrics": {
+                    "step": 13,
+                    "n_accepted": 1482,
+                    "acceptance_ratio": 0.01155501497005988,
+                    "prob_mass": {
+                        "total_prob_before_filter": 1.0000364780426025,
+                        "total_prob_after_filter": 0.013632816262543201,
+                        "max_prob_before_filter": 0.7723343968391418,
+                        "min_prob_before_filter": 3.8978027619776534e-13,
+                        "max_prob_after_filter": 0.013276434503495693,
+                        "min_prob_after_filter": 3.713819182737943e-11
+                    },
+                    "top_token_prob": 0.7723343968391418,
+                    "top_token": ",",
+                    "actual_token_prob": 0.013276434503495693,
+                    "actual_token": "}",
+                    "is_intervened": true
+                },
+                "top_20_before_constraint": [
+                    {
+                        "token_id": 11,
+                        "token": ",",
+                        "raw_likelihood": 0.7723343968391418
+                    },
+                    {
+                        "token_id": 2186,
+                        "token": "},",
+                        "raw_likelihood": 0.13746537268161774
+                    },
+                    {
+                        "token_id": 1359,
+                        "token": ",\"",
+                        "raw_likelihood": 0.026217767968773842
+                    },
+                    {
+                        "token_id": 3500,
+                        "token": "}}",
+                        "raw_likelihood": 0.013531628996133804
+                    },
+                    {
+                        "token_id": 92,
+                        "token": "}",
+                        "raw_likelihood": 0.013276434503495693
+                    },
+                    {
+                        "token_id": 39254,
+                        "token": "}},",
+                        "raw_likelihood": 0.010310197249054909
+                    },
+                    {
+                        "token_id": 10064,
+                        "token": "}\"",
+                        "raw_likelihood": 0.0035024057142436504
+                    },
+                    {
+                        "token_id": 534,
+                        "token": "}\u010a",
+                        "raw_likelihood": 0.002027238020673394
+                    },
+                    {
+                        "token_id": 32075,
+                        "token": "\"}}",
+                        "raw_likelihood": 0.0014978711260482669
+                    },
+                    {
+                        "token_id": 9737,
+                        "token": "}\",",
+                        "raw_likelihood": 0.0013536319602280855
+                    },
+                    {
+                        "token_id": 498,
+                        "token": "\",",
+                        "raw_likelihood": 0.0013269491028040648
+                    },
+                    {
+                        "token_id": 11498,
+                        "token": "}}\u010a",
+                        "raw_likelihood": 0.0011971695348620415
+                    },
+                    {
+                        "token_id": 14682,
+                        "token": "\"},",
+                        "raw_likelihood": 0.0010526846162974834
+                    },
+                    {
+                        "token_id": 2529,
+                        "token": "\u0120},",
+                        "raw_likelihood": 0.0007599721429869533
+                    },
+                    {
+                        "token_id": 7966,
+                        "token": "}.",
+                        "raw_likelihood": 0.0007474838057532907
+                    },
+                    {
+                        "token_id": 633,
+                        "token": "}\u010a\u010a",
+                        "raw_likelihood": 0.0007137045031413436
+                    },
+                    {
+                        "token_id": 48549,
+                        "token": "}}\u010a\u010a",
+                        "raw_likelihood": 0.0006622396758757532
+                    },
+                    {
+                        "token_id": 98319,
+                        "token": "**,",
+                        "raw_likelihood": 0.0006408829940482974
+                    },
+                    {
+                        "token_id": 76642,
+                        "token": "}}}",
+                        "raw_likelihood": 0.0006025001057423651
+                    },
+                    {
+                        "token_id": 37928,
+                        "token": "},{\"",
+                        "raw_likelihood": 0.0005769187118858099
+                    }
+                ],
+                "top_20_after_constraint": [
+                    {
+                        "token_id": 92,
+                        "token": "}",
+                        "raw_likelihood": 0.013276434503495693
+                    },
+                    {
+                        "token_id": 335,
+                        "token": "\u0120}",
+                        "raw_likelihood": 0.0001534907059976831
+                    },
+                    {
+                        "token_id": 68,
+                        "token": "e",
+                        "raw_likelihood": 9.94526781141758e-05
+                    },
+                    {
+                        "token_id": 198,
+                        "token": "\u010a",
+                        "raw_likelihood": 4.9577396566746756e-05
+                    },
+                    {
+                        "token_id": 271,
+                        "token": "\u010a\u010a",
+                        "raw_likelihood": 2.13038656511344e-05
+                    },
+                    {
+                        "token_id": 36,
+                        "token": "E",
+                        "raw_likelihood": 1.3461485650623217e-05
+                    },
+                    {
+                        "token_id": 220,
+                        "token": "\u0120",
+                        "raw_likelihood": 3.7849292766622966e-06
+                    },
+                    {
+                        "token_id": 1432,
+                        "token": "\u010a\u010a\u010a",
+                        "raw_likelihood": 3.4489592053432716e-06
+                    },
+                    {
+                        "token_id": 1038,
+                        "token": "\u010a\u010a\u010a\u010a",
+                        "raw_likelihood": 2.2357589841703884e-06
+                    },
+                    {
+                        "token_id": 7361,
+                        "token": "\u010a\u0120\u0120\u0120\u0120\u010a",
+                        "raw_likelihood": 7.437154749823094e-07
+                    },
+                    {
+                        "token_id": 197,
+                        "token": "\u0109",
+                        "raw_likelihood": 5.001481326871726e-07
+                    },
+                    {
+                        "token_id": 9122,
+                        "token": "\u010a\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u010a",
+                        "raw_likelihood": 3.81229966706087e-07
+                    },
+                    {
+                        "token_id": 7163,
+                        "token": "\u0120\u0109",
+                        "raw_likelihood": 3.4353769251538324e-07
+                    },
+                    {
+                        "token_id": 88179,
+                        "token": "\u010a\u0120\u0120\u0120\u0120\u010a\u010a",
+                        "raw_likelihood": 2.7064675123256166e-07
+                    },
+                    {
+                        "token_id": 18108,
+                        "token": "\u010a\u0109\u010a",
+                        "raw_likelihood": 2.559330027906981e-07
+                    },
+                    {
+                        "token_id": 5244,
+                        "token": "\u010a\u010a\u010a\u010a\u010a\u010a",
+                        "raw_likelihood": 2.4926558239712904e-07
+                    },
+                    {
+                        "token_id": 4815,
+                        "token": "\u0120\u010a\u010a",
+                        "raw_likelihood": 2.46615201149325e-07
+                    },
+                    {
+                        "token_id": 14963,
+                        "token": "\u010a\u010a\u010a\u010a\u010a",
+                        "raw_likelihood": 2.0988164806112763e-07
+                    },
+                    {
+                        "token_id": 19086,
+                        "token": "\u010a\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u010a",
+                        "raw_likelihood": 2.0615003393231746e-07
+                    },
+                    {
+                        "token_id": 35235,
+                        "token": "\u010a\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u010a",
+                        "raw_likelihood": 1.681330132896619e-07
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "metrics": {
+                    "step": 14,
+                    "n_accepted": 1,
+                    "acceptance_ratio": 7.79690618762475e-06,
+                    "prob_mass": {
+                        "total_prob_before_filter": 1.000056505203247,
+                        "total_prob_after_filter": 9.478543688601349e-06,
+                        "max_prob_before_filter": 0.8989956974983215,
+                        "min_prob_before_filter": 3.1036835428099874e-12,
+                        "max_prob_after_filter": 9.478543688601349e-06,
+                        "min_prob_after_filter": 9.478543688601349e-06
+                    },
+                    "top_token_prob": 0.8989956974983215,
+                    "top_token": "{\"",
+                    "actual_token_prob": null,
+                    "actual_token": null,
+                    "is_intervened": true
+                },
+                "top_20_before_constraint": [
+                    {
+                        "token_id": 5018,
+                        "token": "{\"",
+                        "raw_likelihood": 0.8989956974983215
+                    },
+                    {
+                        "token_id": 5324,
+                        "token": "\u0120{\"",
+                        "raw_likelihood": 0.01942877098917961
+                    },
+                    {
+                        "token_id": 12885,
+                        "token": "\"\"\"",
+                        "raw_likelihood": 0.0033988608047366142
+                    },
+                    {
+                        "token_id": 14196,
+                        "token": "``",
+                        "raw_likelihood": 0.002900439780205488
+                    },
+                    {
+                        "token_id": 1075,
+                        "token": "/*",
+                        "raw_likelihood": 0.0028192356694489717
+                    },
+                    {
+                        "token_id": 17289,
+                        "token": "({\"",
+                        "raw_likelihood": 0.002515194471925497
+                    },
+                    {
+                        "token_id": 220,
+                        "token": "\u0120",
+                        "raw_likelihood": 0.0021412400528788567
+                    },
+                    {
+                        "token_id": 37928,
+                        "token": "},{\"",
+                        "raw_likelihood": 0.0019173679174855351
+                    },
+                    {
+                        "token_id": 13922,
+                        "token": "{'",
+                        "raw_likelihood": 0.001663996372371912
+                    },
+                    {
+                        "token_id": 323,
+                        "token": "\u0120and",
+                        "raw_likelihood": 0.0014320092741400003
+                    },
+                    {
+                        "token_id": 3500,
+                        "token": "}}",
+                        "raw_likelihood": 0.0013488284312188625
+                    },
+                    {
+                        "token_id": 693,
+                        "token": "return",
+                        "raw_likelihood": 0.0013333315728232265
+                    },
+                    {
+                        "token_id": 15425,
+                        "token": "\"\"\"\u010a\u010a",
+                        "raw_likelihood": 0.0012732557952404022
+                    },
+                    {
+                        "token_id": 755,
+                        "token": "def",
+                        "raw_likelihood": 0.0011279442114755511
+                    },
+                    {
+                        "token_id": 5378,
+                        "token": "];",
+                        "raw_likelihood": 0.0010929523268714547
+                    },
+                    {
+                        "token_id": 74694,
+                        "token": "```",
+                        "raw_likelihood": 0.0010823443299159408
+                    },
+                    {
+                        "token_id": 11308,
+                        "token": "};",
+                        "raw_likelihood": 0.001058845897205174
+                    },
+                    {
+                        "token_id": 14316,
+                        "token": "]}",
+                        "raw_likelihood": 0.0009848290355876088
+                    },
+                    {
+                        "token_id": 1204,
+                        "token": "[\"",
+                        "raw_likelihood": 0.0009577404707670212
+                    },
+                    {
+                        "token_id": 2178,
+                        "token": "();",
+                        "raw_likelihood": 0.0008438000222668052
+                    }
+                ],
+                "top_20_after_constraint": [
+                    {
+                        "token_id": 128009,
+                        "token": "<|eot_id|>",
+                        "raw_likelihood": 9.478543688601349e-06
+                    }
+                ]
+            }
+        ]
+    ],
+    "error": null
+}

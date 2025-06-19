@@ -76,7 +76,7 @@ def main():
         # decoding_recorder = XGrammarDecodingRecorder(tokenizer, compiled_grammar, save_log=True)
 
         # Tokenize prompt into ids
-        prompt = "Generate json object according to the following schema: \n" + json.dumps(schema)
+        prompt = "Generate json object according to the following schema: \n"
         input_ids = tokenizer(
             [prompt], add_special_tokens=False, return_tensors="pt", padding=True
         )["input_ids"]

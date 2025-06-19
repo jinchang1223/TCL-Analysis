@@ -24,7 +24,7 @@ MODEL_ID = "meta-llama/Llama-3.2-1B-Instruct"
 GRAMMAR_PATH = "data/Glaiveai2K/"
 HISTORY_PATH = "tries/Glaiveai2K/"
 # OUTPUT_PATH = "tries/generated_outputs/Glaiveai2K_output.json"
-DEVICE = "cuda"
+DEVICE = "cpu"
 DTYPE = torch.float32
 MAX_NEW_TOKENS = 512
 TEMPERATURE = 1.0
@@ -57,7 +57,7 @@ def main():
     print(f"Found {len(schema_files_to_process)} new schema files to process")
     
     for schema_file in tqdm(schema_files_to_process, desc="Processing schemas"):
-        print(f"\nProcessing {schema_file.name}...")
+        # print(f"\nProcessing {schema_file.name}...")
     
         # Load JSON schema
         with open(GRAMMAR_PATH + schema_file.name, "r") as file:
@@ -81,7 +81,7 @@ def main():
             decoding_recorder = XGrammarDecodingRecorder(tokenizer, compiled_grammar, save_log=True)
 
             # Tokenize prompt into ids
-            prompt = "Generate json object according to the following schema: \n" # + json.dumps(schema)
+            prompt = "Generate json object according to the following schema: \n" + json.dumps(schema)
             input_ids = tokenizer(
                 [prompt], add_special_tokens=False, return_tensors="pt", padding=True
             )["input_ids"]
@@ -94,9 +94,9 @@ def main():
                 pad_token_id=tokenizer.eos_token_id,
                 eos_token_id=tokenizer.eos_token_id,
                 max_new_tokens=MAX_NEW_TOKENS,
-                top_p=TOP_P,
-                top_k=TOP_K,
-                temperature=TEMPERATURE,
+                # top_p=TOP_P,
+                # top_k=TOP_K,
+                # temperature=TEMPERATURE,
                 logits_processor=[decoding_recorder],
                 repetition_penalty=REPETITION_PENALTY,
                 num_return_sequences=1,
